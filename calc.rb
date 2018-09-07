@@ -6,6 +6,15 @@ def +(a, b)
 	puts a + b
 end
 
+def multiply(a, b)
+	puts a * b
+end
+
+
+def *(a, b)
+	puts a * b
+end
+
 puts "Welcome to calculator"
 puts "What is the first operand"
 op_a = gets.chomp.to_f
@@ -21,4 +30,12 @@ if operator == 'add'
 end
 if operator == '+'
 	add(op_a, op_b)
+end
+
+
+if operator == 'multiply'
+	multiply(op_a, op_b)
+end
+if operator == '*'
+	multiply(op_a, op_b)
 end

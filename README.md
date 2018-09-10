@@ -1,8 +1,4 @@
 # Calculator
-This is a calculator but it is more for learning ruby better.
-I wanted play with some stuff so you get this app.
-
-# Calculator
 
 This project is a very simple calculator. The only thing I really wanted to do is make a calculator to see if I was understanding the ruby language better.
 
@@ -14,20 +10,16 @@ If you want to run this you will have to have ruby installed at the moment and d
 
 ### Avalible Operands
 
-+
-add
 
--
-subtract
+add/+
 
-*
-multiply
+subtract/-
 
-/
-devide
+multiply/*
 
-**
-power
+devide//
+
+power/**
 
 ## Author
 

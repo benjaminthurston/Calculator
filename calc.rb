@@ -1,18 +1,46 @@
 def add(a, b)
-	puts a + b
+	display(a + b)
 end
 
 def +(a, b)
-	puts a + b
+	display(a + b)
 end
 
 def multiply(a, b)
-	puts a * b
+	display(a * b)
 end
 
 
 def *(a, b)
-	puts a * b
+	display(a * b)
+end
+
+def display(result)
+	puts sprintf("%.2f", result)
+end
+
+def subtract(a, b)
+	display(a - b)
+end
+
+def -(a, b)
+	display(a - b)
+end
+
+def devide(a, b)
+	display(a / b)
+end
+
+def /(a, b)
+	display(a / b)
+end
+
+def power(a, b)
+	display(a ** b)
+end
+
+def **(a, b)
+	display(a ** b)
 end
 
 puts "Welcome to calculator"
@@ -28,14 +56,39 @@ operator = gets.chomp
 if operator == 'add'
 	add(op_a, op_b)
 end
+
 if operator == '+'
 	add(op_a, op_b)
 end
 
-
 if operator == 'multiply'
 	multiply(op_a, op_b)
 end
+
 if operator == '*'
 	multiply(op_a, op_b)
+end
+
+if operator == 'subtract'
+	subtract(op_a, op_b)
+end
+
+if operator == '-'
+	subtract(op_a, op_b)
+end
+
+if operator == 'devide'
+	devide(op_a, op_b)
+end
+
+if operator == '/'
+	devide(op_a, op_b)
+end
+
+if operator == 'power'
+	power(op_a, op_b)
+end
+
+if operator == '**'
+	power(op_a, op_b)
 end

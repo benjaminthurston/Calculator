@@ -1,3 +1,15 @@
+def sphere_area(diameter)
+	display(Math::PI * diameter ** 2)	
+end
+
+def square_root(value)
+	display(Math.sqrt(value))
+end
+
+def hyp(a, b)
+	display(Math.sqrt(a ** 2 + b ** 2))
+end
+
 def add(a, b)
 	display(a + b)
 end
@@ -44,14 +56,19 @@ def **(a, b)
 end
 
 puts "Welcome to calculator"
-puts "What is the first operand"
-op_a = gets.chomp.to_f
-
-puts "What is the second operand"
-op_b = gets.chomp.to_f
 
 puts "What operand do you want to use?"
 operator = gets.chomp
+
+
+puts "What is the first operand"
+op_a = gets.chomp.to_f
+
+if operator != 'sqrt' && operator != 'sphere_area'
+	puts "What is the second operand"
+	op_b = gets.chomp.to_f
+end
+
 
 if operator == 'add'
 	add(op_a, op_b)
@@ -91,4 +108,16 @@ end
 
 if operator == '**'
 	power(op_a, op_b)
+end
+
+if operator == 'sqrt'
+	square_root(op_a)
+end
+
+if operator == 'sphere_area'
+	sphere_area(op_a)
+end
+
+if operator == 'hyp'
+	hyp(op_a, op_b)
 end

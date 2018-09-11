@@ -21,6 +21,12 @@ devide//
 
 power/**
 
+square_root
+
+sphere_area
+
+hyp
+
 ## Author
 
 * **Benjamin Thurston** - *Initial work* - [benjaminthurston](https://github.com/benjaminthurston)
